@@ -1412,6 +1412,164 @@
     .faq-item.active button {
         background-color: hsl(270, 30%, 8%);
     }
+
+    /* =============== MEJORAS RESPONSIVAS PARA MÓVILES =============== */
+    @media (max-width: 767px) {
+
+        /* Base y texto general para mejor lectura */
+        body {
+            font-size: 16px;
+        }
+
+        p.text-sm {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        p.text-xs {
+            font-size: 0.9rem;
+            line-height: 1.4rem;
+        }
+
+        p.text-base {
+            font-size: 1.125rem;
+            line-height: 1.6rem;
+        }
+
+        /* Aumentar significativamente el tamaño de los iconos en móvil */
+        svg.w-6.h-6 {
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+
+        svg.w-7.h-7 {
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+
+        svg.w-12.h-12 {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+
+        /* Icono principal superior */
+        svg.w-4.h-4 {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        /* Estrellitas/Checks */
+
+        /* Aumentar viñetas de emojis en listas */
+        span.text-xl.shrink-0 {
+            font-size: 2.2rem;
+            margin-right: 0.5rem;
+        }
+
+        /* Padding y Gaps en Grids y Cards */
+        .p-4 {
+            padding: 1.5rem;
+        }
+
+        /* Tarjetas de Hero */
+        .p-5 {
+            padding: 1.75rem 1.25rem;
+        }
+
+        /* Tarjetas de Características */
+        .px-10 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        /* Botón final */
+        .gap-3 {
+            gap: 1rem;
+        }
+
+        .gap-4 {
+            gap: 1.5rem;
+        }
+
+        .gap-5 {
+            gap: 1.75rem;
+        }
+
+        .gap-8 {
+            gap: 1.5rem;
+        }
+
+        /* Grid de estadísticas */
+
+        /* Tamaños de títulos principales */
+        h1.text-4xl {
+            font-size: 2.75rem;
+            line-height: 1.1;
+        }
+
+        .text-3xl {
+            font-size: 2.25rem;
+            line-height: 1.2;
+        }
+
+        h2.text-3xl {
+            font-size: 2.25rem;
+            line-height: 1.25;
+        }
+
+        .text-5xl.md\:text-6xl {
+            font-size: 3.5rem;
+            line-height: 1.1;
+        }
+
+        .text-7xl.md\:text-8xl {
+            font-size: 4rem;
+            line-height: 1;
+        }
+
+        /* Ajustar los botones CTA para ser más grandes y amigables con toque */
+        a button.h-11 {
+            height: 4.5rem;
+            font-size: 1.35rem;
+            white-space: normal;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        /* Carrusel botones manuales */
+        button.w-9.h-9 {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        button .lucide-chevron-left,
+        button .lucide-chevron-right {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        /* Ajustar FAQ a móvil */
+        .faq-item button {
+            font-size: 1.15rem;
+            padding: 1.25rem 1rem;
+        }
+
+        .faq-answer {
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        /* Contador más grande y claro */
+        #countdown-timer {
+            font-size: 3.5rem;
+        }
+
+        /* Grid de stats - Dejamos 2 columnas pero que los números brillen */
+        .grid-cols-2 {
+            gap: 2rem 0.5rem;
+        }
+    }
 </style>
 
 
@@ -1665,7 +1823,8 @@
                             class=text-[hsl(330,80%,65%)]>pequeñísima muestra</span> de lo que recibes.
                     <p class="text-[hsl(280,20%,65%)] text-sm md:text-base">Cada diseño llega listo para vender —
                         <strong class=text-white>en el momento que pagas, son completamente tuyos en Google
-                            Drive.</strong> Sin esperas. Sin complicaciones.</p>
+                            Drive.</strong> Sin esperas. Sin complicaciones.
+                    </p>
                 </div>
                 <div class="relative w-full max-w-sm md:max-w-lg mx-auto overflow-hidden rounded-2xl aspect-square border border-[hsl(280,40%,20%)] bg-[hsl(270,25%,8%)]"
                     bis_skin_checked=1>
@@ -2433,7 +2592,7 @@
         updateCarousel('next');
         startCountdown();
     }
-    
+
     // Systeme.io a veces carga el código después del DOMContentLoaded
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initAll);
