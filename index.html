@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sublicontrol - Diseños Anime MegaPack</title>
 
+    <!-- PRECARGA DE RECURSOS CRITICOS (PageSpeed Boost) -->
+    <link rel="preload" as="image" href="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d871a115.91492639_1.webp" fetchpriority="high">
+
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -1628,6 +1631,7 @@
                 class="relative flex items-center justify-center bg-gradient-to-b from-[hsl(270,40%,12%)] via-[hsl(270,30%,8%)] to-[hsl(270,30%,6%)]">
                 <div class="relative z-10 text-center px-4 w-full max-w-3xl mx-auto pt-3 pb-2" bis_skin_checked=1>
                     <div class="flex flex-col items-center mb-2" bis_skin_checked=1>
+                        <!-- OPTIMIZACION: Precarga de imagen del logo -->
                         <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69caed7d342067.46949335_ChatGPTImage11mar202612_01_57.webp"
                             alt="Sublimación Élite" width=48 height=48
                             class="w-12 h-12 md:w-14 md:h-14 object-contain opacity-80 drop-shadow-[0_0_12px_hsl(280,70%,60%/0.6)]"
@@ -1651,38 +1655,39 @@
                                     class="relative overflow-hidden rounded-2xl aspect-square border border-[hsl(280,40%,20%)] shadow-[0_0_40px_hsl(330,80%,55%/0.12)]"
                                     bis_skin_checked=1>
                                     <div id="carousel-images" class="absolute inset-0 w-full h-full overflow-hidden">
-                                        <!-- Imágenes en orden del 1 al 7 -->
+                                        <!-- OPTIMIZACION: Imagen 1 es eager y de alta prioridad -->
                                         <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d871a115.91492639_1.webp"
-                                            alt="1"
+                                            alt="1" fetchpriority="high" loading="eager" decoding="sync"
                                             class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-[700ms] opacity-100 translate-x-0 z-[5]">
+                                        <!-- OPTIMIZACION: Imágenes ocultas 2 al 7 con Lazy Loading nativo -->
                                         <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86be2a5.40682413_2.webp"
-                                            alt="2"
+                                            alt="2" loading="lazy" decoding="async"
                                             class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-[700ms] opacity-0 translate-x-full">
                                         <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8715952.36039764_3.webp"
-                                            alt="3"
+                                            alt="3" loading="lazy" decoding="async"
                                             class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-[700ms] opacity-0 translate-x-full">
                                         <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8696551.26482116_4.webp"
-                                            alt="4"
+                                            alt="4" loading="lazy" decoding="async"
                                             class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-[700ms] opacity-0 translate-x-full">
                                         <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86d4114.34730501_5.webp"
-                                            alt="5"
+                                            alt="5" loading="lazy" decoding="async"
                                             class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-[700ms] opacity-0 translate-x-full">
                                         <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d870f1f2.52789221_6.webp"
-                                            alt="6"
+                                            alt="6" loading="lazy" decoding="async"
                                             class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-[700ms] opacity-0 translate-x-full">
                                         <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8710dd4.32333351_7.webp"
-                                            alt="7"
+                                            alt="7" loading="lazy" decoding="async"
                                             class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-[700ms] opacity-0 translate-x-full">
                                     </div>
 
-                                    <button onclick="manualPrev()"
+                                    <button onclick="manualPrev()" aria-label="Anterior"
                                         class="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full flex items-center justify-center bg-black/50 border border-[hsl(280,40%,25%)] text-white hover:bg-[hsl(330,80%,45%)]/50 transition-colors"><svg
                                             xmlns=http://www.w3.org/2000/svg width=24 height=24 viewBox="0 0 24 24"
                                             fill=none stroke=currentColor stroke-width=2 stroke-linecap=round
                                             stroke-linejoin=round class="lucide lucide-chevron-left w-5 h-5">
                                             <path d="m15 18-6-6 6-6"></path>
                                         </svg></button>
-                                    <button onclick="manualNext()"
+                                    <button onclick="manualNext()" aria-label="Siguiente"
                                         class="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full flex items-center justify-center bg-black/50 border border-[hsl(280,40%,25%)] text-white hover:bg-[hsl(330,80%,45%)]/50 transition-colors"><svg
                                             xmlns=http://www.w3.org/2000/svg width=24 height=24 viewBox="0 0 24 24"
                                             fill=none stroke=currentColor stroke-width=2 stroke-linecap=round
@@ -1693,19 +1698,19 @@
                                     <div id="carousel-dots"
                                         class="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex gap-1.5"
                                         bis_skin_checked=1>
-                                        <button onclick="manualGoTo(0)"
+                                        <button onclick="manualGoTo(0)" aria-label="Ir a 1"
                                             class="w-2 h-2 rounded-full transition-all bg-[hsl(330,80%,60%)] scale-125"></button>
-                                        <button onclick="manualGoTo(1)"
+                                        <button onclick="manualGoTo(1)" aria-label="Ir a 2"
                                             class="w-2 h-2 rounded-full transition-all bg-white/30"></button>
-                                        <button onclick="manualGoTo(2)"
+                                        <button onclick="manualGoTo(2)" aria-label="Ir a 3"
                                             class="w-2 h-2 rounded-full transition-all bg-white/30"></button>
-                                        <button onclick="manualGoTo(3)"
+                                        <button onclick="manualGoTo(3)" aria-label="Ir a 4"
                                             class="w-2 h-2 rounded-full transition-all bg-white/30"></button>
-                                        <button onclick="manualGoTo(4)"
+                                        <button onclick="manualGoTo(4)" aria-label="Ir a 5"
                                             class="w-2 h-2 rounded-full transition-all bg-white/30"></button>
-                                        <button onclick="manualGoTo(5)"
+                                        <button onclick="manualGoTo(5)" aria-label="Ir a 6"
                                             class="w-2 h-2 rounded-full transition-all bg-white/30"></button>
-                                        <button onclick="manualGoTo(6)"
+                                        <button onclick="manualGoTo(6)" aria-label="Ir a 7"
                                             class="w-2 h-2 rounded-full transition-all bg-white/30"></button>
                                     </div>
                                 </div>
@@ -1860,10 +1865,9 @@
                 <div class="relative w-full max-w-4xl mx-auto" bis_skin_checked=1>
                     <div class="relative aspect-video overflow-hidden rounded-2xl border border-[hsl(280,40%,20%)] bg-[hsl(270,25%,8%)]"
                         bis_skin_checked=1>
-                        <video autoplay loop muted playsinline class="w-full h-full object-cover">
-                            <source
-                                src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cada5a6a4e39.17920112_Camiseta.mp4"
-                                type="video/mp4">
+                        <!-- OPTIMIZACION: Video Lazy Load (Se reproduce solo cuando bajas con scroll) -->
+                        <video autoplay loop muted playsinline disablePictureInPicture class="w-full h-full object-cover lazy-video">
+                            <source data-src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cada5a6a4e39.17920112_Camiseta.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -1883,10 +1887,9 @@
                     </div>
                     <div class="relative w-full max-w-sm md:max-w-lg mx-auto overflow-hidden rounded-2xl aspect-square border border-[hsl(280,40%,20%)] bg-[hsl(270,25%,8%)]"
                         bis_skin_checked=1>
-                        <video autoplay loop muted playsinline class="w-full h-full object-cover">
-                            <source
-                                src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cada5a508007.88337617_Baki.mp4"
-                                type="video/mp4">
+                        <!-- OPTIMIZACION: Video Lazy Load -->
+                        <video autoplay loop muted playsinline disablePictureInPicture class="w-full h-full object-cover lazy-video">
+                            <source data-src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cada5a508007.88337617_Baki.mp4" type="video/mp4">
                         </video>
                     </div>
                     <p class="text-center mt-4 text-xs text-[hsl(280,20%,45%)] italic">+45,000 diseños de anime ·
@@ -2322,10 +2325,10 @@
                                     </path>
                                 </svg>
                             </div>
-                            <p class="text-sm text-[hsl(280,20%,75%)] mb-3 italic">"+45,000 imágenes por ese precio es
-                                una
-                                locura. Los fondos transparentes ahorran horas de trabajo en Photoshop."
-                            <p class="text-xs font-semibold text-[hsl(330,70%,65%)]">— Andrés P.</p>
+                            <p class="text-sm text-[hsl(280,20%,75%)] mb-3 italic">"Soy diseñadora freelance y este pack
+                                me
+                                ha dado recursos para meses de proyectos. Mis clientes quedan fascinados."
+                            <p class="text-xs font-semibold text-[hsl(330,70%,65%)]">— Valentina R.</p>
                         </div>
                         <div class="p-5 rounded-xl bg-[hsl(270,25%,10%)] border border-[hsl(280,40%,20%)]"
                             bis_skin_checked=1>
@@ -2366,10 +2369,10 @@
                                     </path>
                                 </svg>
                             </div>
-                            <p class="text-sm text-[hsl(280,20%,75%)] mb-3 italic">"Soy diseñadora freelance y este pack
-                                me
-                                ha dado recursos para meses de proyectos. Mis clientes quedan fascinados."
-                            <p class="text-xs font-semibold text-[hsl(330,70%,65%)]">— Valentina R.</p>
+                            <p class="text-sm text-[hsl(280,20%,75%)] mb-3 italic">"+45,000 imágenes por ese precio es
+                                una
+                                locura. Los fondos transparentes ahorran horas de trabajo en Photoshop."
+                            <p class="text-xs font-semibold text-[hsl(330,70%,65%)]">— Andrés P.</p>
                         </div>
                     </div>
                 </div>
@@ -2584,6 +2587,10 @@
                     slide.style.opacity = '1';
                     slide.style.transform = 'translateX(0)';
                     slide.style.zIndex = '10';
+                    // Si hacemos slide a una imagen que está "lazy", la forzamos a cargar
+                    if(slide.hasAttribute('loading')){
+                        slide.removeAttribute('loading');
+                    }
                 } else {
                     slide.style.opacity = '0';
                     slide.style.zIndex = '1';
@@ -2690,10 +2697,38 @@
             statsObserver.observe(statsSection);
         }
 
+        // --- OPTIMIZACION DE VIDEOS: Lazy Loading Observer ---
+        function initLazyVideos() {
+            const lazyVideos = [].slice.call(document.querySelectorAll("video.lazy-video"));
+
+            if ("IntersectionObserver" in window) {
+                const videoObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(video) {
+                        if (video.isIntersecting) {
+                            for (let source in video.target.children) {
+                                let videoSource = video.target.children[source];
+                                if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                                    videoSource.src = videoSource.dataset.src;
+                                }
+                            }
+                            video.target.load();
+                            video.target.classList.remove("lazy-video");
+                            videoObserver.unobserve(video.target);
+                        }
+                    });
+                });
+
+                lazyVideos.forEach(function(video) {
+                    videoObserver.observe(video);
+                });
+            }
+        }
+
         // Iniciar todo al cargar la página (compatible con constructores visuales)
         function initAll() {
             updateCarousel('next');
             startCountdown();
+            initLazyVideos(); // Iniciar lazy load de videos
         }
 
         // Systeme.io a veces carga el código después del DOMContentLoaded
